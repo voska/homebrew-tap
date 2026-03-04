@@ -11,7 +11,7 @@ class Qbo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/voska/qbo-cli/releases/download/v0.2.0/qbo-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "3a103648a7a6c671be8f0de6d1dbc9ef0c4ec4e79099768b24510ce8b2ca4a23"
+      sha256 "8d364fb91b7b9da443e43c1f93532c3851c08aff001e478e427ed4b82f7b5240"
 
       define_method(:install) do
         bin.install "qbo"
@@ -19,7 +19,7 @@ class Qbo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/voska/qbo-cli/releases/download/v0.2.0/qbo-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3eb94fa9d3499259d31df6de9ddf682e0c792dd832bf5682a41ee20a0e8add53"
+      sha256 "4c548c7edbfdf71459fb7b4f18adc68bb4ea0b6fed1364365d52c229319ced8d"
 
       define_method(:install) do
         bin.install "qbo"
@@ -30,14 +30,14 @@ class Qbo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/voska/qbo-cli/releases/download/v0.2.0/qbo-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "553770c674a79449f4f7e3f947321e5ea4c3b8e0098458793944068ff742f753"
+      sha256 "468f5d99b0900a21aa43dec903c326e90697c473110a327805144e6deb99a92e"
       define_method(:install) do
         bin.install "qbo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/voska/qbo-cli/releases/download/v0.2.0/qbo-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "e637c0d5e7053f0b7466d8db3a72ca727e804ba8d191c8152b7774c61951dded"
+      sha256 "10a0f277983ed67df684ce150d9f068bfc3ae6ad567aa2e07f5a8086a3bd9b25"
       define_method(:install) do
         bin.install "qbo"
       end
