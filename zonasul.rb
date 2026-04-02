@@ -5,21 +5,21 @@
 class Zonasul < Formula
   desc "Zona Sul supermarket CLI for AI agents"
   homepage "https://github.com/voska/zonasul"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/zonasul/releases/download/v0.4.0/zonasul_0.4.0_darwin_amd64.tar.gz"
-      sha256 "1ee27331851bab44f94e07740c08374d97137f6094c80137b06173807b121dcf"
+      url "https://github.com/voska/zonasul/releases/download/v0.4.1/zonasul_0.4.1_darwin_amd64.tar.gz"
+      sha256 "d2330a538b1885305bfcbfbe8487fbe59aea236598f8d808f0f363cf9ae06596"
 
       define_method(:install) do
         bin.install "zonasul"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/zonasul/releases/download/v0.4.0/zonasul_0.4.0_darwin_arm64.tar.gz"
-      sha256 "dea56b8e117450520513b374f6f847a96dbf381e3569abf678f0d045a9aeab73"
+      url "https://github.com/voska/zonasul/releases/download/v0.4.1/zonasul_0.4.1_darwin_arm64.tar.gz"
+      sha256 "f78876bd88335621c031fa82dcf7d2c07111f39404bdb9def33f52c07e47ee01"
 
       define_method(:install) do
         bin.install "zonasul"
@@ -29,15 +29,15 @@ class Zonasul < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/zonasul/releases/download/v0.4.0/zonasul_0.4.0_linux_amd64.tar.gz"
-      sha256 "2f3a13f5a35af01cd216893c596e6553fc3bf936c08bf623d20233665ac71b27"
+      url "https://github.com/voska/zonasul/releases/download/v0.4.1/zonasul_0.4.1_linux_amd64.tar.gz"
+      sha256 "d31ff8e0dee0886c1659ecc2bc1bed49129a6e3b88b55f794a880e4d3b43a03d"
       define_method(:install) do
         bin.install "zonasul"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/zonasul/releases/download/v0.4.0/zonasul_0.4.0_linux_arm64.tar.gz"
-      sha256 "76cf3b44438a4683a4aff5463d3f5ab7ad9c7b4c747bec59f480d4a251c2d3df"
+      url "https://github.com/voska/zonasul/releases/download/v0.4.1/zonasul_0.4.1_linux_arm64.tar.gz"
+      sha256 "df7fdf654d0b826c906efbcefd8ac01703c9e87f432b9bf080ec7d551f3948c8"
       define_method(:install) do
         bin.install "zonasul"
       end
