@@ -5,21 +5,21 @@
 class Toktap < Formula
   desc "Transparent proxy that taps LLM API traffic to extract token usage metrics"
   homepage "https://github.com/voska/toktap"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/toktap/releases/download/v0.3.0/toktap_0.3.0_darwin_amd64.tar.gz"
-      sha256 "aaeee7d018089c0475a385973c57fd289a9c6d08d04bec066a4d94a4e977dd7b"
+      url "https://github.com/voska/toktap/releases/download/v0.3.1/toktap_0.3.1_darwin_amd64.tar.gz"
+      sha256 "630529f9389d688c2f77859c34c68a6da780a006e6c8f8ba0ebc0e49e677fa39"
 
       define_method(:install) do
         bin.install "toktap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/toktap/releases/download/v0.3.0/toktap_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b266221331bffe25b846c47aac0cb886dc95446bab1312c8ac6f5bf7f24c69d2"
+      url "https://github.com/voska/toktap/releases/download/v0.3.1/toktap_0.3.1_darwin_arm64.tar.gz"
+      sha256 "e2266058e51fea0c09fc4e679411554beadb5dcf4c2719c88954256812b6d1de"
 
       define_method(:install) do
         bin.install "toktap"
@@ -29,15 +29,15 @@ class Toktap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/toktap/releases/download/v0.3.0/toktap_0.3.0_linux_amd64.tar.gz"
-      sha256 "c40694b7dd91fcba0707d33e2703b165cc41377121e572847cffe240e4984c87"
+      url "https://github.com/voska/toktap/releases/download/v0.3.1/toktap_0.3.1_linux_amd64.tar.gz"
+      sha256 "bbe7b87ff1b8a7ab04553eab4e7600b9c6eebefd2d20edfeaf7abb5878047956"
       define_method(:install) do
         bin.install "toktap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/toktap/releases/download/v0.3.0/toktap_0.3.0_linux_arm64.tar.gz"
-      sha256 "912a7847a688c1088dcbcd3e0104007da2713132f2a03d0496dd25b14302ed7e"
+      url "https://github.com/voska/toktap/releases/download/v0.3.1/toktap_0.3.1_linux_arm64.tar.gz"
+      sha256 "99623bc5cc38be072bd2e2e8d95d4d813fd45c3d9fa559cef2d9bf69ce7769d8"
       define_method(:install) do
         bin.install "toktap"
       end
