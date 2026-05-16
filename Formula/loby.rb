@@ -5,13 +5,13 @@
 class Loby < Formula
   desc "Canonical CLI for Lob — direct mail, address verification, and campaigns for humans and AI agents."
   homepage "https://lobycli.com"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/loby/releases/download/v0.1.2/loby_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "357d17fe0bc2c9a3fa218cc20b3209890074b54914444c73265b61d3ac25b0a9"
+      url "https://github.com/voska/loby/releases/download/v0.1.3/loby_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "e45a0fa5c54610a78e766d1253a24f6a6eddda9c302f78ec5a098524db64db28"
 
       define_method(:install) do
         bin.install "loby"
@@ -19,8 +19,8 @@ class Loby < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/loby/releases/download/v0.1.2/loby_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "bb6e0cf7ef8890be965d51471ddb0af5ffe80c469b262159d07312a97246871c"
+      url "https://github.com/voska/loby/releases/download/v0.1.3/loby_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "a9b1a9c7836ea14f02327393fe8d486d730a9f31cda105d561369a3c33714e02"
 
       define_method(:install) do
         bin.install "loby"
@@ -31,16 +31,16 @@ class Loby < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/loby/releases/download/v0.1.2/loby_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "ade71950cb9e0c3a96c12018ea6b4292588fd9f8da3267e505a666dd146c49d6"
+      url "https://github.com/voska/loby/releases/download/v0.1.3/loby_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "91337daf8010c275142e3270de6a68ff651170602b82e436b824131325539120"
       define_method(:install) do
         bin.install "loby"
         generate_completions_from_executable(bin/"loby", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/loby/releases/download/v0.1.2/loby_0.1.2_Linux_arm64.tar.gz"
-      sha256 "fc62978ef38db1e8324cbc9785ba57eebb4eb2f2f11f6593ce8b436d2dc1839e"
+      url "https://github.com/voska/loby/releases/download/v0.1.3/loby_0.1.3_Linux_arm64.tar.gz"
+      sha256 "6a4fcc6a7436bbdfa2b1039056896b0687b7de1aadda87db00e95649f35e0707"
       define_method(:install) do
         bin.install "loby"
         generate_completions_from_executable(bin/"loby", "completion")
