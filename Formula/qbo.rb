@@ -5,21 +5,21 @@
 class Qbo < Formula
   desc "QuickBooks Online CLI for humans and AI agents"
   homepage "https://github.com/voska/qbo-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/qbo-cli/releases/download/v0.3.0/qbo-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c7e87bb913c7e6bf241838c052784ade5cdeac09bfe345967f9f1af14db7c65c"
+      url "https://github.com/voska/qbo-cli/releases/download/v0.4.0/qbo-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ebab573cbcff4c06a5431becdcfa7460c5bb9d4289e99966b7351faac053a82d"
 
       define_method(:install) do
         bin.install "qbo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/qbo-cli/releases/download/v0.3.0/qbo-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "c4abd0fe9b049fde94e2f16a2c1f7140e388fcc047018b88242528f12b64bf06"
+      url "https://github.com/voska/qbo-cli/releases/download/v0.4.0/qbo-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "38e8c355f244d32901176b93100796af5a9dcbc2dfdeb2cb0ab1b619bb6bd451"
 
       define_method(:install) do
         bin.install "qbo"
@@ -29,15 +29,15 @@ class Qbo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/qbo-cli/releases/download/v0.3.0/qbo-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "ab0ac0fe256653e396e11db80bb0795035184f5477458c24295d74217fc15456"
+      url "https://github.com/voska/qbo-cli/releases/download/v0.4.0/qbo-cli_0.4.0_linux_amd64.tar.gz"
+      sha256 "bb3567fd25a22d6b8d6ba0f6cbee92d641714bcbb635e35568d3752e59be31a3"
       define_method(:install) do
         bin.install "qbo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/qbo-cli/releases/download/v0.3.0/qbo-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "c78ccbb6e480c838259bec1611c71f80f30394e1733312d413c0a312b6795aab"
+      url "https://github.com/voska/qbo-cli/releases/download/v0.4.0/qbo-cli_0.4.0_linux_arm64.tar.gz"
+      sha256 "46cd996851e8cb7a80b700b4536fff50abad2e871cd227de450498eaa762a0c6"
       define_method(:install) do
         bin.install "qbo"
       end
