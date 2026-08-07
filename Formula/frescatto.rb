@@ -5,21 +5,21 @@
 class Frescatto < Formula
   desc "Frescatto fish & seafood CLI for humans and AI agents"
   homepage "https://github.com/voska/frescatto"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/frescatto/releases/download/v0.3.0/frescatto_0.3.0_darwin_amd64.tar.gz"
-      sha256 "94028934362312420ade8c5322d7341987acc1e42e0a6533bfeab97fd8c81f38"
+      url "https://github.com/voska/frescatto/releases/download/v0.3.1/frescatto_0.3.1_darwin_amd64.tar.gz"
+      sha256 "073fd4a7ce1576c9795fdc93a06fe57a6a013207901282b7e78a46d6b040c7f8"
 
       define_method(:install) do
         bin.install "frescatto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/frescatto/releases/download/v0.3.0/frescatto_0.3.0_darwin_arm64.tar.gz"
-      sha256 "e0d07b3e209b369d4b5c2a06a68ecb46df70d7d3f262b10e33abf7aa872672bf"
+      url "https://github.com/voska/frescatto/releases/download/v0.3.1/frescatto_0.3.1_darwin_arm64.tar.gz"
+      sha256 "7912ccb5bc8c967ddee3073d1640c8fbe6f8d3632ce8a7c00e6528e5b514436b"
 
       define_method(:install) do
         bin.install "frescatto"
@@ -29,15 +29,15 @@ class Frescatto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/frescatto/releases/download/v0.3.0/frescatto_0.3.0_linux_amd64.tar.gz"
-      sha256 "58e79875432fd3649062683c756d9237cfebd2002b8a7c3d7ffe41ae245b2649"
+      url "https://github.com/voska/frescatto/releases/download/v0.3.1/frescatto_0.3.1_linux_amd64.tar.gz"
+      sha256 "8c0a4b875fc7a64f4862a20525e096317f10037dc37fa036c55d8caf7fd21f2a"
       define_method(:install) do
         bin.install "frescatto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/frescatto/releases/download/v0.3.0/frescatto_0.3.0_linux_arm64.tar.gz"
-      sha256 "80ff56a0a615ee8be7e887a8f6d0401ea9cea38de119f88299a399dd90450a54"
+      url "https://github.com/voska/frescatto/releases/download/v0.3.1/frescatto_0.3.1_linux_arm64.tar.gz"
+      sha256 "fcce21051a9979620a23c14654545e627f1c0d75c3b95a742a24d5fc2f7b5663"
       define_method(:install) do
         bin.install "frescatto"
       end
