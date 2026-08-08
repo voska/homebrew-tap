@@ -5,21 +5,21 @@
 class Amadeus < Formula
   desc "Amadeus Travel API CLI for humans and AI agents"
   homepage "https://github.com/voska/amadeus-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/amadeus-cli/releases/download/v0.1.0/amadeus_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1170ca93f78bdcce4bec2adb621aacee98be06e4713a83899810bf0a44711f82"
+      url "https://github.com/voska/amadeus-cli/releases/download/v0.2.0/amadeus_0.2.0_darwin_amd64.tar.gz"
+      sha256 "a2dc2d96cedc98f755ccf875c23313e48d2a1b8a43b1b0f5f882b20e325dee05"
 
       define_method(:install) do
         bin.install "amadeus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/amadeus-cli/releases/download/v0.1.0/amadeus_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0ea266af2fb6f36ad1829b9189e1d3369d0bf1c185b26a871dd8be609f57243f"
+      url "https://github.com/voska/amadeus-cli/releases/download/v0.2.0/amadeus_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6a976a60b853acf46eafece689980122e44a210d4056bbf2a253a4638c9ce628"
 
       define_method(:install) do
         bin.install "amadeus"
@@ -29,15 +29,15 @@ class Amadeus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/amadeus-cli/releases/download/v0.1.0/amadeus_0.1.0_linux_amd64.tar.gz"
-      sha256 "2cc2e36d73dd38df7ef760807c74565c7a191d942bac763cd32d5c759139b690"
+      url "https://github.com/voska/amadeus-cli/releases/download/v0.2.0/amadeus_0.2.0_linux_amd64.tar.gz"
+      sha256 "cdfbdd49161145312df8b58fa18e4cbcdac551b6888e58373d494a8111ca2f20"
       define_method(:install) do
         bin.install "amadeus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/amadeus-cli/releases/download/v0.1.0/amadeus_0.1.0_linux_arm64.tar.gz"
-      sha256 "96434fe7ce64b4f9149cb896c408b06d8b21f44de528a26064fbfd09a634dab1"
+      url "https://github.com/voska/amadeus-cli/releases/download/v0.2.0/amadeus_0.2.0_linux_arm64.tar.gz"
+      sha256 "181fa683d9c4d3197b3888cdbba75fa742c3f33b62f4d5cec8dd383b0754b7a4"
       define_method(:install) do
         bin.install "amadeus"
       end
