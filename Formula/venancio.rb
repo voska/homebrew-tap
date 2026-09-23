@@ -5,21 +5,21 @@
 class Venancio < Formula
   desc "Drogaria Venancio pharmacy CLI for humans and AI agents"
   homepage "https://github.com/voska/venancio"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/venancio/releases/download/v0.1.0/venancio_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c27646e64cca03540fe6ce04831a1e8489a9ec08a9c79c1a55f7fc041f8d21c8"
+      url "https://github.com/voska/venancio/releases/download/v0.2.0/venancio_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ff3e0b76cf0e1fc1f845bcddfb4ff2e3eb39e3c62fd04fe74110643b5d22c632"
 
       define_method(:install) do
         bin.install "venancio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/venancio/releases/download/v0.1.0/venancio_0.1.0_darwin_arm64.tar.gz"
-      sha256 "31acae1b15f828606f97008fff9cb9122eab75c74e4e162937c23888a41de454"
+      url "https://github.com/voska/venancio/releases/download/v0.2.0/venancio_0.2.0_darwin_arm64.tar.gz"
+      sha256 "1537aa2c3e8b28b1a49a00a4d204018a49475aa0710e5e9e6dedc0cbd2152b76"
 
       define_method(:install) do
         bin.install "venancio"
@@ -29,15 +29,15 @@ class Venancio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/venancio/releases/download/v0.1.0/venancio_0.1.0_linux_amd64.tar.gz"
-      sha256 "a30d8287c25534fab4d08a6d2d1d8fc14b295b6dc56d2daf7546c5345f2e2941"
+      url "https://github.com/voska/venancio/releases/download/v0.2.0/venancio_0.2.0_linux_amd64.tar.gz"
+      sha256 "f8fc83e249fa8f30454e8cc886c4af4981c0be5832da0e0c11279617960783a3"
       define_method(:install) do
         bin.install "venancio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/venancio/releases/download/v0.1.0/venancio_0.1.0_linux_arm64.tar.gz"
-      sha256 "27dfeb95dcb26bf86fb0ff40df027f3d48b5b3f6d8e7b305c45371143b335405"
+      url "https://github.com/voska/venancio/releases/download/v0.2.0/venancio_0.2.0_linux_arm64.tar.gz"
+      sha256 "34dbcc2bba82eb0f5fdd489f3070d00d0681d81437df036198b19a6c3450e06f"
       define_method(:install) do
         bin.install "venancio"
       end
