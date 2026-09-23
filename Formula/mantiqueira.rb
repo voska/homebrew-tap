@@ -5,21 +5,21 @@
 class Mantiqueira < Formula
   desc "Mantiqueira em Casa egg CLI for humans and AI agents"
   homepage "https://github.com/voska/mantiqueira"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/mantiqueira/releases/download/v0.1.0/mantiqueira_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f525093bc1f8c58f25c09cdd4d3233ad5373e95696a2ac7c3fe7bc5231860450"
+      url "https://github.com/voska/mantiqueira/releases/download/v0.2.0/mantiqueira_0.2.0_darwin_amd64.tar.gz"
+      sha256 "f26fa1a32e07a8c4d69a60f0893bdfb0386438b25da859753101839b0da0ec81"
 
       define_method(:install) do
         bin.install "mantiqueira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/mantiqueira/releases/download/v0.1.0/mantiqueira_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a07b352dccc7320d642d3ebb775c4b7bf458c0668cb16508c9b7ada2f0435a34"
+      url "https://github.com/voska/mantiqueira/releases/download/v0.2.0/mantiqueira_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e026b48d72998b8edc5512eeb67132fc825cd91fe77d5b42b186fd4d4c94edc2"
 
       define_method(:install) do
         bin.install "mantiqueira"
@@ -29,15 +29,15 @@ class Mantiqueira < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/mantiqueira/releases/download/v0.1.0/mantiqueira_0.1.0_linux_amd64.tar.gz"
-      sha256 "e21c0432900475a707cf42cba94a3731a2ab872433a80e57253a64e9e578ebd3"
+      url "https://github.com/voska/mantiqueira/releases/download/v0.2.0/mantiqueira_0.2.0_linux_amd64.tar.gz"
+      sha256 "4073ab27451b560f7c519efd76e87e0215bb8690f56d587c72d395d62777bb58"
       define_method(:install) do
         bin.install "mantiqueira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/mantiqueira/releases/download/v0.1.0/mantiqueira_0.1.0_linux_arm64.tar.gz"
-      sha256 "ebf391f3d678fde21ffb677eb2bcfc87a6b915bd4e487f7a93eba2304bcbb1f4"
+      url "https://github.com/voska/mantiqueira/releases/download/v0.2.0/mantiqueira_0.2.0_linux_arm64.tar.gz"
+      sha256 "9e37706874b4cb67eb4a08d348fb7c127bec73da1f754c31d02c4188b2ebe119"
       define_method(:install) do
         bin.install "mantiqueira"
       end
