@@ -5,21 +5,21 @@
 class Prezunic < Formula
   desc "Prezunic supermarket CLI for humans and AI agents"
   homepage "https://github.com/voska/prezunic"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/prezunic/releases/download/v0.1.0/prezunic_0.1.0_darwin_amd64.tar.gz"
-      sha256 "02fe7857250a4df69a5390d875845e48dfbe37a9db9694894e2ab7449d83135d"
+      url "https://github.com/voska/prezunic/releases/download/v0.2.0/prezunic_0.2.0_darwin_amd64.tar.gz"
+      sha256 "07be68e4e5fd9474107be116ba9ef4cf3c38ab165f555c06053fb6ce5840be87"
 
       define_method(:install) do
         bin.install "prezunic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/prezunic/releases/download/v0.1.0/prezunic_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d0a1a9a2822035578c6f55dd5520d35e0ba9b51d99bce477d299f8b674bd5008"
+      url "https://github.com/voska/prezunic/releases/download/v0.2.0/prezunic_0.2.0_darwin_arm64.tar.gz"
+      sha256 "fc5c6d32dc084b739d6bf20b6d53f24cd97207b5f6fc93e83270ba8b1694753c"
 
       define_method(:install) do
         bin.install "prezunic"
@@ -29,15 +29,15 @@ class Prezunic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/prezunic/releases/download/v0.1.0/prezunic_0.1.0_linux_amd64.tar.gz"
-      sha256 "04da3ed44d69478cae6b1752048ef0bcda476c0a71bde3347cc69104a551370a"
+      url "https://github.com/voska/prezunic/releases/download/v0.2.0/prezunic_0.2.0_linux_amd64.tar.gz"
+      sha256 "5864fa5b2983df320f8b846c8002db865e0eae4589330f9ab4f6dba05e3da4e4"
       define_method(:install) do
         bin.install "prezunic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/prezunic/releases/download/v0.1.0/prezunic_0.1.0_linux_arm64.tar.gz"
-      sha256 "2b4bff37c5c0c05a4fd71568e49aae7f817adfb0dab4b2e9d34fb0aa824a5b0d"
+      url "https://github.com/voska/prezunic/releases/download/v0.2.0/prezunic_0.2.0_linux_arm64.tar.gz"
+      sha256 "ca4916393c688546f4da2aea2311fd485a6c2aae20bf610cf2d2cbda3576673b"
       define_method(:install) do
         bin.install "prezunic"
       end
