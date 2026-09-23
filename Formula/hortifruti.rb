@@ -5,21 +5,21 @@
 class Hortifruti < Formula
   desc "Hortifruti greengrocer CLI for humans and AI agents"
   homepage "https://github.com/voska/hortifruti"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/hortifruti/releases/download/v0.1.0/hortifruti_0.1.0_darwin_amd64.tar.gz"
-      sha256 "7337e5ce512b3bfef2e2c635a7e6a06e88fcb181c9ca24c90976f944f1d9adec"
+      url "https://github.com/voska/hortifruti/releases/download/v0.2.0/hortifruti_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b29b3d8c2468d3f31391ed5c03d822ebede34ed78046f48a7a3406f19d6c92d7"
 
       define_method(:install) do
         bin.install "hortifruti"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/hortifruti/releases/download/v0.1.0/hortifruti_0.1.0_darwin_arm64.tar.gz"
-      sha256 "689acd1e24dae63a503efd2d5f5711ee2ac56d9d5d51da830aa92acaff544a1e"
+      url "https://github.com/voska/hortifruti/releases/download/v0.2.0/hortifruti_0.2.0_darwin_arm64.tar.gz"
+      sha256 "29fa88cc648acc7663b22f30fed876e2582850118946239f04fbf3b3c8c9ae08"
 
       define_method(:install) do
         bin.install "hortifruti"
@@ -29,15 +29,15 @@ class Hortifruti < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/hortifruti/releases/download/v0.1.0/hortifruti_0.1.0_linux_amd64.tar.gz"
-      sha256 "d734e40f51e07592b6781159216b192e2259cbf88dc702187d413135691c3ef0"
+      url "https://github.com/voska/hortifruti/releases/download/v0.2.0/hortifruti_0.2.0_linux_amd64.tar.gz"
+      sha256 "ed5b71181ae3340aa07ec2e37778080ad1ad5e0df8a7b7ec88cdc0a1fed4d778"
       define_method(:install) do
         bin.install "hortifruti"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/hortifruti/releases/download/v0.1.0/hortifruti_0.1.0_linux_arm64.tar.gz"
-      sha256 "0047449308524810e03a83802494c215c5c835ca5138973d6004d3f0da77a3df"
+      url "https://github.com/voska/hortifruti/releases/download/v0.2.0/hortifruti_0.2.0_linux_arm64.tar.gz"
+      sha256 "aeb5959715fce7cc243727402b95724e54d94f18566bf639934749e34696014b"
       define_method(:install) do
         bin.install "hortifruti"
       end
