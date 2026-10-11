@@ -5,21 +5,21 @@
 class Bambu < Formula
   desc "Slice, check, send and monitor Bambu Lab prints over LAN, for humans and AI agents"
   homepage "https://github.com/voska/bambu"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/bambu/releases/download/v0.2.0/bambu_0.2.0_darwin_amd64.tar.gz"
-      sha256 "475568387d9bbcc95240a591c343b0460ceb73031cd2f2e691d89f69178bb184"
+      url "https://github.com/voska/bambu/releases/download/v0.3.0/bambu_0.3.0_darwin_amd64.tar.gz"
+      sha256 "afb9e4159b078d09ac81871b237d4d845aeea474a96ca11a3faa50b93ecd3789"
 
       define_method(:install) do
         bin.install "bambu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/bambu/releases/download/v0.2.0/bambu_0.2.0_darwin_arm64.tar.gz"
-      sha256 "94db804034351e867029753480df6ae0053f1aebcf6a123cba178540974a8117"
+      url "https://github.com/voska/bambu/releases/download/v0.3.0/bambu_0.3.0_darwin_arm64.tar.gz"
+      sha256 "845aa9fe314a900eb8944b60332c1d00157d5f8456f48688427c1ed75585a4c7"
 
       define_method(:install) do
         bin.install "bambu"
@@ -29,15 +29,15 @@ class Bambu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/bambu/releases/download/v0.2.0/bambu_0.2.0_linux_amd64.tar.gz"
-      sha256 "04554ec0129aa7eab37fa128d3910c8c5b219c829b343d720fb82ddc5aa6ced9"
+      url "https://github.com/voska/bambu/releases/download/v0.3.0/bambu_0.3.0_linux_amd64.tar.gz"
+      sha256 "d99b998d580b1b094d39092d7142fdf26daa7b996ea5c216aaa451e74e8181da"
       define_method(:install) do
         bin.install "bambu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/bambu/releases/download/v0.2.0/bambu_0.2.0_linux_arm64.tar.gz"
-      sha256 "49eef5ea90b28285e0c87250a42113ca88adfcac022362fef2f755916120c68d"
+      url "https://github.com/voska/bambu/releases/download/v0.3.0/bambu_0.3.0_linux_arm64.tar.gz"
+      sha256 "16bef88217fd3c877c2a0963ef4b888fa1fb1ab94d11db1c7d02edf9d0ba303a"
       define_method(:install) do
         bin.install "bambu"
       end
