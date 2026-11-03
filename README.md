@@ -13,6 +13,7 @@ brew tap voska/tap
 | Formula | Description |
 |---|---|
 | [amadeus](https://github.com/voska/amadeus-cli) | Amadeus Travel API CLI for humans and AI agents |
+| [close](https://github.com/voska/close) | Close CRM CLI for humans and AI agents |
 | [frescatto](https://github.com/voska/frescatto) | Frescatto fish & seafood CLI for humans and AI agents |
 | [hn](https://github.com/voska/hn-cli) | Agent-friendly Hacker News CLI via the Algolia API |
 | [loby](https://github.com/voska/loby) | Canonical CLI for Lob — direct mail, address verification, and campaigns |
