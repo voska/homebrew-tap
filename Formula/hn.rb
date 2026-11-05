@@ -5,21 +5,21 @@
 class Hn < Formula
   desc "Agent-friendly Hacker News CLI via the Algolia API"
   homepage "https://github.com/voska/hn-cli"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/voska/hn-cli/releases/download/v0.2.1/hn-cli_0.2.1_darwin_amd64.tar.gz"
-      sha256 "3fae823c465bd0c2acb6a5071a24aab6613f525b0174b8e31a0dea53964a896a"
+      url "https://github.com/voska/hn-cli/releases/download/v0.3.0/hn-cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1c3e0032fab4ec9480649e3b03521529d69999059539af7c6525615fca322fef"
 
       define_method(:install) do
         bin.install "hn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/voska/hn-cli/releases/download/v0.2.1/hn-cli_0.2.1_darwin_arm64.tar.gz"
-      sha256 "4add3fd0105e3948243fa7ca00d0b2ca963437303cc49ac7ef95450579532854"
+      url "https://github.com/voska/hn-cli/releases/download/v0.3.0/hn-cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "1812f2251c1f5495706d245ba794001282d9cabbc0e3ab42d7743eb8fd99be21"
 
       define_method(:install) do
         bin.install "hn"
@@ -29,15 +29,15 @@ class Hn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/hn-cli/releases/download/v0.2.1/hn-cli_0.2.1_linux_amd64.tar.gz"
-      sha256 "7389a9296ee5ca8bdd178810775d3ac4e3a2e53de6c3dc234e1b4eb50f27b3f8"
+      url "https://github.com/voska/hn-cli/releases/download/v0.3.0/hn-cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "138af3b03be46e1b1e84d628bf1afa19fe6fa0379ab10d95489102e329f94100"
       define_method(:install) do
         bin.install "hn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/voska/hn-cli/releases/download/v0.2.1/hn-cli_0.2.1_linux_arm64.tar.gz"
-      sha256 "15e5ac36e5cf1ba745e3cf31f7503055bc4d6fb196d0b004cee1f752859b032b"
+      url "https://github.com/voska/hn-cli/releases/download/v0.3.0/hn-cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "780234f63bec928bc38ea5c11bc8c5de8825da0a607d3c312d972d0fcba8c618"
       define_method(:install) do
         bin.install "hn"
       end
